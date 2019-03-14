@@ -82,12 +82,13 @@ let conversationState, userState;
 // CAUTION: The Memory Storage used here is for local bot debugging only. When the bot
 // is restarted, anything stored in memory will be gone.
 
+/*
 const memoryStorage = new MemoryStorage();
 conversationState = new ConversationState(memoryStorage);
 userState = new UserState(memoryStorage);
+*/
 
 
-/*
 const dbstorage = new CosmosDbStorage({
     serviceEndpoint: process.env.ACTUAL_SERVICE_ENDPOINT, 
     authKey: process.env.ACTUAL_AUTH_KEY, 
@@ -96,7 +97,7 @@ const dbstorage = new CosmosDbStorage({
 })
 conversationState = new ConversationState(dbstorage);
 userState = new UserState(dbstorage);
-*/
+
 
 /*
 const blobstorage = new BlobStorage({

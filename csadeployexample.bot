@@ -20,7 +20,7 @@
             "serviceName": "csadeployexample9abd",
             "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
             "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-        },
+        },      
         {
             "type": "endpoint",
             "appId": "",
