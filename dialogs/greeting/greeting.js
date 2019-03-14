@@ -93,7 +93,7 @@ class Greeting extends ComponentDialog {
         }
         if (!userProfile.name) {
             // prompt for name, if missing
-            return await step.prompt(NAME_PROMPT, 'What is your name?');
+            return await step.prompt(NAME_PROMPT, 'Cual es tu nombre?');
         } else {
             return await step.next();
         }
@@ -116,7 +116,7 @@ class Greeting extends ComponentDialog {
             await this.userProfileAccessor.set(step.context, userProfile);
         }
         if (!userProfile.city) {
-            return await step.prompt(CITY_PROMPT, `Hello ${ userProfile.name }, what city do you live in?`);
+            return await step.prompt(CITY_PROMPT, `Hola ${ userProfile.name }, en que ciudad vives?`);
         } else {
             return await step.next();
         }
@@ -177,8 +177,8 @@ class Greeting extends ComponentDialog {
     async greetUser(step) {
         const userProfile = await this.userProfileAccessor.get(step.context);
         // Display to the user their profile information and end dialog
-        await step.context.sendActivity(`Hi ${ userProfile.name }, from ${ userProfile.city }, nice to meet you!`);
-        await step.context.sendActivity(`You can always say 'My name is <your name> to reintroduce yourself to me.`);
+        await step.context.sendActivity(`Hola ${ userProfile.name }, de ${ userProfile.city }, gusto en conocerte!`);
+        await step.context.sendActivity(`Puedes decir 'Mi nombre es <your name> para volver a presentarte.`);
         return await step.endDialog();
     }
 }
