@@ -12,6 +12,10 @@ const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = req
 // Import required bot configuration.
 const { BotConfiguration } = require('botframework-config');
 
+//DM add reference to cosmos
+const { CosmosDbStorage } = require("botbuilder-azure");
+const {BlobStorage} = require("botbuilder-azure");
+
 // This bot's main dialog.
 const { BasicBot } = require('./bot');
 
@@ -77,9 +81,30 @@ let conversationState, userState;
 // For local development, in-memory storage is used.
 // CAUTION: The Memory Storage used here is for local bot debugging only. When the bot
 // is restarted, anything stored in memory will be gone.
+/*
 const memoryStorage = new MemoryStorage();
 conversationState = new ConversationState(memoryStorage);
 userState = new UserState(memoryStorage);
+*/
+
+/*
+const dbstorage = new CosmosDbStorage({
+    serviceEndpoint: process.env.ACTUAL_SERVICE_ENDPOINT, 
+    authKey: process.env.ACTUAL_AUTH_KEY, 
+    databaseId: process.env.DATABASE,
+    collectionId: process.env.COLLECTION
+})
+conversationState = new ConversationState(dbstorage);
+userState = new UserState(dbstorage);
+*/
+
+const blobstorage = new BlobStorage({
+    containerName: process.env.CONTAINER_NAME,
+    storageAccountOrConnectionString: process.env.CONNSTRING,
+    authKey: process.env.ACCESSKEY
+ })
+ conversationState = new ConversationState(blobstorage);
+ userState = new UserState(blobstorage);
 
 // CAUTION: You must ensure your product environment has the NODE_ENV set
 //          to use the Azure Blob storage or Azure Cosmos DB providers.

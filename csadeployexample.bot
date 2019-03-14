@@ -1,61 +1,74 @@
 {
-  "name": "csadeployexample",
-  "padlock": "t22MDAHK50JmwGqkwjHx7w==!0ZR3O0+kK9i+VAkGR8eHJ1avFTNxwUHx4OkrB8kCco9YTVAzUuSloHHLJdmR7v+q",
-  "version": "2.0",
-  "services": [
-    {
-      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-      "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
-      "resourceGroup": "csadeployexample",
-      "serviceName": "csadeployexample",
-      "type": "abs",
-      "name": "csadeployexample",
-      "id": "1"
-    },
-    {
-      "connectionString": "GI07HQZRqBBuCBY98S6eFQ==!vrk4QSh4ef2ASIjfY8z3szX8EOvY3nWqhSHg9Qd0HKDkErMEc5nvppM+licuztXPLD+5svE2rTZ8toefB06Fzr0477rHA7SmKINi3Qmn7zB6zpgkFjutjvbaIWakprjLyNnw7++AFWY22L/lQh/kiNMEZB5Th59wyiZSRAAEOGk95x0MOI+T3aMn+uWOCZ2Dpw71N5h9JgDjWHjGlc8RXb3VM67tYHa0IPsfi0Whmj0=",
-      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-      "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
-      "resourceGroup": "csadeployexample",
-      "serviceName": "csadeployexample9abd",
-      "type": "blob",
-      "id": "2"
-    },
-    {
-      "appId": "",
-      "appPassword": "",
-      "endpoint": "http://localhost:3978/api/messages",
-      "type": "endpoint",
-      "name": "development",
-      "id": "3"
-    },
-    {
-      "appId": "0ccb721c-4565-420e-a68a-848cbeeb2ca3",
-      "appPassword": "xElOr1FGJiUkEYJOxrbyDg==!KvWn9ACSNUPQzUBqOOciq9VOAqnESj+e3tv4ouYiZZU=",
-      "endpoint": "https://csadeployexample.azurewebsites.net/api/messages",
-      "type": "endpoint",
-      "name": "production",
-      "id": "4"
-    },
-    {
-      "instrumentationKey": "p71cpvkdFGmO3FPabB8Kng==!d+VpPmQADOFoMdR2y3XZ5TMUUTw3GU5phk8ypsBxJVyFYVww7yr/BTIsA3gN4PHw",
-      "applicationId": "ae2b293d-8e22-4030-b013-33ffede0ddb0",
-      "apiKeys": {},
-      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-      "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
-      "resourceGroup": "csadeployexample",
-      "serviceName": "csadeployexample22oyd4",
-      "type": "appInsights",
-      "id": "5"
-    },
-    {
-      "appId": "19abaf46-e2e6-42f7-9f3b-a5253e51c10f",
-      "authoringKey": "U2fGIxvT1SEvjlez1nFp3Q==!UE+fVA4X+zEFFweOCWfO92OZSYZp8dg3hywF0nD6MRr3QmNibbXo6hvbk/FL/lLS",
-      "version": "0.1",
-      "region": "westus",
-      "type": "luis",
-      "name": "BasicBotLuisApplication",
-      "id": "6"
-    }
-  ]
+    "name": "csadeployexample",
+    "description": "",
+    "services": [
+        {
+            "type": "abs",
+            "appId": "0ccb721c-4565-420e-a68a-848cbeeb2ca3",
+            "id": "1",
+            "name": "csadeployexample",
+            "resourceGroup": "csadeployexample",
+            "serviceName": "csadeployexample",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        {
+            "type": "blob",
+            "connectionString": "N+CLVePDe2zn3vyAOldX3A==!7CKVpHzaXZzpj3HhcH5M2uhglv35aWFu1Xno8ZwtBYTXX8xVXDbHSRdDiwiuTR1apyjnpfl+JWmCc6r7XV5WCkBPBUTwIGhliVJIiboZwQtohFlSSaGxfXqahTUIPR47jXghWIVEvgQZEOCo/pkHPFVOcXZIlRuz5wbRwbjNppLP3bpWoNBwMaStpz7kZA7e/bGK9wroO70RDrtXAd8bwI0fYaESZzkIWSrfu8pN9xw=",
+            "id": "2",
+            "resourceGroup": "csadeployexample",
+            "serviceName": "csadeployexample9abd",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "3",
+            "name": "development"
+        },
+        {
+            "type": "endpoint",
+            "appId": "0ccb721c-4565-420e-a68a-848cbeeb2ca3",
+            "appPassword": "TT33JU/CN5Dihz9uWXtkIA==!Dh8JM1DLg1KqhTt0XlZESHXr7lZdxGYEGWxshVOrkF4=",
+            "endpoint": "https://csadeployexample.azurewebsites.net/api/messages",
+            "id": "4",
+            "name": "production"
+        },
+        {
+            "type": "appInsights",
+            "apiKeys": {},
+            "applicationId": "ae2b293d-8e22-4030-b013-33ffede0ddb0",
+            "id": "5",
+            "instrumentationKey": "Z2skPV6ORpLSs0yTH4lg+w==!2AAL6ajWVXY0QuI/Ug+oQEkbDhGo+sfOluDrP2qkokRQZ6IO7BT3VXVIGrkM329x",
+            "resourceGroup": "csadeployexample",
+            "serviceName": "csadeployexample22oyd4",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        {
+            "type": "luis",
+            "appId": "19abaf46-e2e6-42f7-9f3b-a5253e51c10f",
+            "authoringKey": "8e75/2iglIqWl6qjthi87Q==!cUHNIcZoaqaWOf7o50JlTOnrTBa7k5wx+I1T8+nZSTEsSj82Unclpwk07m6FFR5Q",
+            "id": "6",
+            "name": "BasicBotLuisApplication",
+            "region": "westus",
+            "version": "0.1"
+        },
+        {
+            "type": "abs",
+            "appId": "0ccb721c-4565-420e-a68a-848cbeeb2ca3",
+            "id": "248",
+            "resourceGroup": "csadeployexample",
+            "serviceName": "csadeployexample",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    ],
+    "padlock": "t22MDAHK50JmwGqkwjHx7w==!0ZR3O0+kK9i+VAkGR8eHJ1avFTNxwUHx4OkrB8kCco9YTVAzUuSloHHLJdmR7v+q",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\dimel\\OneDrive\\Learning\\CSA\\BOTS\\LABS\\csadeployexample\\csadeployexample.bot"
 }
